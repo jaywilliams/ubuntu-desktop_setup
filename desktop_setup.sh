@@ -98,8 +98,10 @@ sh $PACKAGES_SCRIPT
 rm $PACKAGES_SCRIPT
 
 # Dropbox
-print_log "Installing Dropbox"
+print_log "Install Dropbox"
+print_prompt
 cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86" | tar xzf -
+~/.dropbox-dist/dropboxd
 
 print_log "SuperUser Setup"
 print_prompt

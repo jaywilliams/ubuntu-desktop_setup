@@ -23,10 +23,10 @@ mysql-workbench
 php5 php5-curl php-pear
 
 ## Software Version Contorl
-git git-svn gitg git-cola
+git gitg git-cola
 
 ## Text Editors, Text/Markup Related Scripts
-vim vim-gnome sublime-text-2
+vim vim-gnome sublime-text
 highlight astyle colordiff diffstat meld
 
 ## Language Related Packages
@@ -56,6 +56,6 @@ ttf-liberation ttf-ubuntu-font-family ttf-mscorefonts-installer ttf-arabeyes
 xfonts-75dpi xfonts-100dpi
 
 ## Multimedia
-fmpeg faac lame audacity vlc
+ffmpeg faac lame audacity vlc
 easytag id3v2
 
