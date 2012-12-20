@@ -26,7 +26,7 @@ php5 php5-curl php-pear
 git git-svn gitg git-cola
 
 ## Text Editors, Text/Markup Related Scripts
-vim vim-gnome
+vim vim-gnome sublime-text-2
 highlight astyle colordiff diffstat meld
 
 ## Language Related Packages
