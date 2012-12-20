@@ -83,18 +83,11 @@ print_prompt
 ## External Repositories
 # Sublime Text 2
 add-apt-repository ppa:webupd8team/sublime-text-2
-# Dropbox
-echo "# Dropbox" | tee /etc/apt/sources.list.d/dropbox.list
-echo "deb http://linux.dropbox.com/ubuntu $(lsb_release -cs) main" | tee -a /etc/apt/sources.list.d/dropbox.list
-
-## External Repository Keys
-apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 5044912E #Dropbox
 
 ## Update system
 print_log "Package update"
 apt-get update
 apt-get upgrade
-# apt-get dist-upgrade
 
 ## Install new packages
 print_log "Installing new packages"
@@ -103,6 +96,10 @@ sed '/^\#/d;/^$/d' $PACKAGES_FILE | tr '\n' ' ' >> $PACKAGES_SCRIPT
 chmod 755 $PACKAGES_SCRIPT
 sh $PACKAGES_SCRIPT
 rm $PACKAGES_SCRIPT
+
+# Dropbox
+print_log "Installing Dropbox"
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86" | tar xzf -
 
 print_log "SuperUser Setup"
 print_prompt
