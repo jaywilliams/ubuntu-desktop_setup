@@ -84,6 +84,9 @@ print_prompt
 # Sublime Text 2
 add-apt-repository ppa:webupd8team/sublime-text-2
 
+# UberWriter
+add-apt-repository ppa:w-vollprecht/ppa
+
 ## Update system
 print_log "Package update"
 apt-get update

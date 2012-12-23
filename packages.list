@@ -26,7 +26,7 @@ php5 php5-curl php-pear
 git gitg git-cola
 
 ## Text Editors, Text/Markup Related Scripts
-vim vim-gnome sublime-text
+vim vim-gtk sublime-text
 highlight astyle colordiff diffstat meld
 
 ## Language Related Packages
@@ -43,6 +43,7 @@ gparted sshfs foremost
 launchy launchy-plugins launchy-skins
 guake cssed
 shutter hamster-applet
+uberwriter retext
 
 ## Desktop & Internet Applications
 chromium-browser chromium-codecs-ffmpeg
