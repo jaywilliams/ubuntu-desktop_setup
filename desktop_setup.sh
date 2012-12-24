@@ -124,6 +124,14 @@ sed -i "s/^GRUB_TIMEOUT=.*/GRUB_TIMEOUT=$GRUB_TIMEOUT/" /etc/default/grub
 mv /etc/grub.d/30_os-prober /etc/grub.d/09_os-prober
 update-grub
 
+## Apache Config
+sed -i "s#/var/www#/home/$SUPER_USER/Sites#" /etc/apache2/sites-available/default
+ln -s /etc/apache2/mods-available/vhost_alias.load /etc/apache2/mods-enabled/
+ln -s /etc/apache2/mods-available/rewrite.load /etc/apache2/mods-enabled/
+ln -s /etc/apache2/mods-available/expires.load /etc/apache2/mods-enabled/
+ln -s /etc/apache2/mods-available/headers.load /etc/apache2/mods-enabled/
+apachectl restart
+
 ## Mail Aliases
 # echo "root: root,$SUPPORT_EMAIL" | tee -a /etc/aliases
 # echo "$SUPER_USER: $SUPER_USER,$SUPER_USER@$SERVER_DOMAIN" | tee -a /etc/aliases
