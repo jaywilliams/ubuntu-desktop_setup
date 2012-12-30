@@ -1,0 +1,10 @@
+#!/bin/sh
+case "$1" in
+        thaw|resume)
+        DISPLAY=:0.0 su `who | grep tty7 | sed 's/\([a-z]*\).*/\1/'` -c "synclient TapButton2=2 TapButton3=3"
+        DISPLAY=:0.0 su `who | grep tty8 | sed 's/\([a-z]*\).*/\1/'` -c "synclient TapButton2=2 TapButton3=3"
+        ;;
+        *)
+        ;;
+        esac
+exit $?
