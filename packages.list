@@ -21,6 +21,7 @@ mysql-workbench
 
 ## Programming Languages & Platforms
 php5 php5-curl php-pear
+rubygems
 
 ## Software Version Contorl
 git gitg git-cola

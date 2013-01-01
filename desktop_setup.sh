@@ -100,6 +100,9 @@ chmod 755 $PACKAGES_SCRIPT
 sh $PACKAGES_SCRIPT
 rm $PACKAGES_SCRIPT
 
+# Capifony
+gem install capifony
+
 # Dropbox
 print_log "Install Dropbox"
 print_prompt
