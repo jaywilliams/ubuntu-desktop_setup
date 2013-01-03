@@ -4,6 +4,7 @@
 
 ## Libraries, Software & Development Essentials
 tmux
+libncurses5-dev libncursesw5-dev
 
 ## Networking Applications
 traceroute curl nmap dnsutils
